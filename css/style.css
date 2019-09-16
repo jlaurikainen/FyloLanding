@@ -1,5 +1,69 @@
+:root {
+  font-size: 16px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+.icon {
+  color: #070439;
+}
+
+@media screen and (max-width: 769px) {
+  body {
+    background: url("../images/bg-intro.svg") top center/100% no-repeat;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  header {
+    height: 5rem;
+    line-height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0rem 2.5rem;
+  }
+  .logo {
+    display: block;
+    height: 1.75rem;
+  }
+  main {
+    padding: 1rem 3rem 3rem 3rem;
+  }
+  footer {
+    padding: 3rem;
+  }
+  .icon {
+    color: #fff;
+    margin-right: 1rem;
+  }
+  .icon:last-child {
+    margin-right: 0rem;
+  }
+  .illustration {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem 1.5rem 3rem 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
