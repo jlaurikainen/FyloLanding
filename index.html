@@ -13,18 +13,17 @@
 </head>
 <body>
   <header>
-      <div>
-        <img src="images/logo.svg" alt="Fylo Logo" class="logo">
-      </div>
+      <img src="images/logo.svg" alt="Fylo Logo" class="logo">
       <div class="social">
         <ion-icon name="logo-twitter" class="icon"></ion-icon>
         <ion-icon name="logo-facebook" class="icon"></ion-icon>
         <ion-icon name="mail" class="icon"></ion-icon>
       </div>
   </header>
+  <section class="illustration">
+    <img src="images/illustration-main.svg" alt="Illustration">
+  </section>
   <main>
-      <img src="images/illustration-main.svg" alt="Illustration" class="illustration">
-
       <h1>All your files in one secure location, accessible anywhere.</h1>
 
       <p>Fylo stores all your most important files in one secure location. 
@@ -33,8 +32,10 @@
     
       <form>
           <label for="email">Sign up for early access</label>
-          <input type="email" name="email" id="email">
-          <input type="submit">Sign Up</input>
+          <div>
+            <input type="email" name="email" id="email">
+            <input type="submit" value="Sign Up">
+          </div>
       </form>
   </main>
   <footer>
