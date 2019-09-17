@@ -97,7 +97,7 @@ $font-body: "Open Sans", sans-serif;
         font-size: 1.25rem;
 
         &:focus{
-            border: 1px solid $color-primary-soft;
+            border: 1px solid $color-neutral;
             outline: 0;
         }
     }
@@ -133,6 +133,68 @@ $font-body: "Open Sans", sans-serif;
     }
 }
 
-@media screen and (max-width: 1025px){
-    
+@media screen and (max-width: 769px){
+    body{
+        display: block;
+        background: url('../images/bg-intro.svg') center top/ 100% 45% no-repeat;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    header, main, section.illustration, footer{
+        padding: 0vw 12vw;
+    }
+
+    header, footer{
+        height: 6rem;
+    }
+
+    .logo{
+        height: 25%;
+    }
+
+    .icon{
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    section.illustration{
+        background: #fff;
+        margin-bottom: 8rem;
+        background: transparent;
+    }
+
+    form{
+        display: block;
+
+        div{
+            display: block;
+        }
+    }
+
+    input[type="email"], input[type="submit"]{
+        height: 2rem;
+        font-size: 0.75rem;
+    }
+
+    input[type="email"]{
+        padding: 0.75rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        box-shadow: none;
+        border: 1px solid $color-primary-soft;
+    }
+
+    input[type="submit"]{
+        width: auto;
+        padding: 0px 2rem;
+    }
 }
