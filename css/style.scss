@@ -30,20 +30,20 @@ $font-body: "Open Sans", sans-serif;
         align-items: center;
         justify-content: space-between;
         padding: 0px 5vw;
-    }
 
-    header img{
-        display: inline-block;
+        img{
+            display: inline-block;
+        }
     }
 
     .icon{
         margin-right: 1.25rem;
         font-size: 1.5rem;
         color: #000;
-    }
 
-    .icon:last-child{
-        margin-right: 0rem;
+        &:last-child{
+            margin-right: 0rem;
+        }
     }
 
     section.illustration{
@@ -52,11 +52,11 @@ $font-body: "Open Sans", sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    section.illustration img{
-        max-width: 100%;
-        padding: 0px 5vw;
+        
+        img{
+            max-width: 100%;
+            padding: 0px 5vw;
+        }
     }
 
     main{
@@ -70,6 +70,11 @@ $font-body: "Open Sans", sans-serif;
     form{
         display: flex;
         flex-direction: column;
+
+        div{
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     label{
@@ -77,11 +82,6 @@ $font-body: "Open Sans", sans-serif;
         font-family: $font-heading;
         font-size: 1.25rem;
         margin-bottom: 1rem;
-    }
-
-    form div{
-        display: flex;
-        justify-content: space-between;
     }
 
     input[type="email"], input[type="submit"]{
@@ -93,6 +93,13 @@ $font-body: "Open Sans", sans-serif;
 
     input[type="email"]{
         width: calc(100% - 11rem);
+        padding: 1rem;
+        font-size: 1.25rem;
+
+        &:focus{
+            border: 1px solid $color-primary-soft;
+            outline: 0;
+        }
     }
 
     input[type="submit"]{
@@ -108,10 +115,10 @@ $font-body: "Open Sans", sans-serif;
         align-items: center;
         justify-content: flex-end;
         padding: 0px 5vw;
-    }
 
-    footer a{
-        font-size: 0.75rem;
+        a{
+            font-size: 0.75rem;
+        }
     }
 
     h1{
